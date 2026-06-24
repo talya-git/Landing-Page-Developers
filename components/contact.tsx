@@ -27,48 +27,48 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={120}>
-          <form className="mt-12 space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid gap-6 sm:grid-cols-2">
-              <input
-                type="text"
-                placeholder="שם"
-                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
-              />
-              <input
-                type="text"
-                placeholder="חברה"
-                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
-              />
-            </div>
-            <div className="grid gap-6 sm:grid-cols-2">
-              <input
-                type="tel"
-                placeholder="טלפון"
-                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
-              />
-              <input
-                type="email"
-                placeholder="אימייל"
-                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
-              />
-            </div>
-            <select className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground/40 transition-colors focus:border-gold focus:outline-none">
-              <option value="">שלב הפרויקט</option>
-              <option value="planning">תכנון</option>
-              <option value="permit">היתר</option>
-              <option value="branding">מיתוג</option>
-              <option value="marketing">שיווק</option>
-              <option value="sales">מכירות</option>
-            </select>
-            <div className="pt-4 text-center">
+          <div className="mt-10 rounded-2xl border border-gold/20 bg-background/90 p-8 shadow-2xl backdrop-blur-md">
+            <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <input
+                  type="text"
+                  placeholder="שם"
+                  className="rounded-lg border border-gold/20 bg-card px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                />
+                <input
+                  type="text"
+                  placeholder="חברה"
+                  className="rounded-lg border border-gold/20 bg-card px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                />
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <input
+                  type="tel"
+                  placeholder="טלפון"
+                  className="rounded-lg border border-gold/20 bg-card px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                />
+                <input
+                  type="email"
+                  placeholder="אימייל"
+                  className="rounded-lg border border-gold/20 bg-card px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground transition-all focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20"
+                />
+              </div>
+              <select className="rounded-lg border border-gold/20 bg-card px-4 py-3.5 text-sm text-muted-foreground transition-all focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/20">
+                <option value="">שלב הפרויקט</option>
+                <option value="planning">תכנון</option>
+                <option value="permit">היתר</option>
+                <option value="branding">מיתוג</option>
+                <option value="marketing">שיווק</option>
+                <option value="sales">מכירות</option>
+              </select>
               <button
                 type="submit"
-                className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-gold/20 transition-all hover:scale-105 hover:shadow-xl hover:shadow-gold/30"
+                className="mt-2 rounded-full bg-gold px-10 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-gold/20 transition-all hover:scale-105 hover:shadow-xl hover:shadow-gold/30"
               >
                 בואו נדבר על הפרויקט שלכם
               </button>
-            </div>
-          </form>
+            </form>
+          </div>
         </Reveal>
       </div>
     </section>

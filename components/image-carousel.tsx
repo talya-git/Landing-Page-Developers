@@ -9,6 +9,7 @@ const images = [
   "/media/render4.jpeg",
   "/media/render5.jpeg",
   "/media/render6.jpeg",
+  "/media/render7.jpeg",
 ]
 
 export function ImageCarousel({ title }: { title: string }) {

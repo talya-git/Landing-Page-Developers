@@ -23,7 +23,7 @@ export function WhyUs() {
   return (
     <section className="relative overflow-hidden py-14 md:py-20">
       <img
-        src="/media/render2.jpeg"
+        src="/media/render3.jpeg"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"
