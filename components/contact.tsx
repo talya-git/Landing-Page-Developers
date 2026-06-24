@@ -19,7 +19,7 @@ function FloatingInput({ label, type = "text" }: { label: string; type?: string 
 
 export function Contact() {
   return (
-    <section id="contact" className="relative min-h-[70vh] overflow-hidden py-20 md:py-28">
+    <section id="contact" className="relative overflow-hidden py-20 md:py-28">
       <img
         src="/media/render4.jpeg"
         alt=""
@@ -27,6 +27,7 @@ export function Contact() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-background/50" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-transparent to-background/70" />
 
       <div className="relative mx-auto max-w-2xl px-5 md:px-8">
         <Reveal className="text-center">
