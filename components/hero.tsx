@@ -23,7 +23,7 @@ export function Hero() {
         >
           יש פרויקטים שנבנים.
           <br />
-          ויש פרויקטים שנבנים כדי להצליח.
+          <span className="whitespace-nowrap">ויש פרויקטים שנבנים כדי להצליח.</span>
         </h1>
 
         <p
