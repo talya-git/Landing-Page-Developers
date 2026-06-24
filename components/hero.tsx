@@ -27,10 +27,12 @@ export function Hero() {
         </h1>
 
         <p
-          className="mt-7 max-w-2xl text-pretty text-base leading-relaxed text-foreground/90 sm:text-lg"
+          className="mt-7 max-w-2xl text-base leading-relaxed text-foreground/90 sm:text-lg whitespace-nowrap"
           style={{ animation: "fade-up 0.9s ease 0.25s both" }}
         >
-          באורן כהן גרופ אנחנו מלווים יזמים משלב החשיבה והתכנון, דרך המיתוג, ההדמיות, השיווק והמכירות ועד האכלוס.
+          באורן כהן גרופ אנחנו מלווים יזמים משלב החשיבה והתכנון,
+          <br />
+          דרך המיתוג, ההדמיות, השיווק והמכירות ועד האכלוס.
         </p>
         <p
           className="mt-4 text-pretty text-base leading-relaxed text-foreground/80 sm:text-lg"

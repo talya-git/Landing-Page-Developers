@@ -14,7 +14,7 @@ export function Problem() {
         <Reveal delay={100}>
           <div className="mt-10 space-y-4 text-pretty leading-relaxed text-muted-foreground sm:text-lg">
             <p>היזם משקיע שנים בתכנון. בוחר אדריכלים. עובד מול יועצים. מנהל תקציבים. מקדם היתרים.</p>
-            <p>אבל פעמים רבות <span className="text-foreground font-medium">החשיבה השיווקית נכנסת רק כשהפרויקט כבר מוכן לשיווק.</span></p>
+            <p>אבל פעמים רבות החשיבה השיווקית נכנסת רק כשהפרויקט כבר מוכן לשיווק.</p>
             <p>בשלב הזה חלק מההחלטות המשמעותיות ביותר כבר התקבלו:</p>
           </div>
         </Reveal>
@@ -22,7 +22,7 @@ export function Problem() {
         <Reveal delay={200}>
           <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
             {["התמהיל", "המיצוב", "חוויית הלקוח", "הסיפור של הפרויקט", "הבידול מול המתחרים"].map((item) => (
-              <div key={item} className="rounded-xl border border-border/70 bg-background/60 px-4 py-3 text-center text-sm font-medium text-foreground">
+              <div key={item} className="rounded-xl border border-gold/30 bg-gold/5 px-4 py-3 text-center text-sm font-medium text-gold shadow-sm">
                 {item}
               </div>
             ))}
