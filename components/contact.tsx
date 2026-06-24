@@ -15,6 +15,7 @@ export function Contact() {
 
       <div className="relative mx-auto max-w-2xl px-5 md:px-8">
         <Reveal className="text-center">
+          <img src="/media/a-z.png" alt="A-Z" className="mx-auto mb-6 h-20 w-auto" />
           <h2 className="font-heading text-3xl font-medium leading-tight tracking-tight text-balance text-gold-gradient sm:text-4xl md:text-5xl">
             כל פרויקט מתחיל בחזון.
             <br />
@@ -26,63 +27,48 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="mt-10 rounded-2xl border border-gold/20 bg-background/80 p-8 shadow-2xl backdrop-blur-md">
-            <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid gap-5 sm:grid-cols-2">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-medium text-gold">שם</label>
-                  <input
-                    type="text"
-                    placeholder="השם שלכם"
-                    className="rounded-lg border border-border/60 bg-card/60 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 transition-colors focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold/30"
-                  />
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-medium text-gold">חברה</label>
-                  <input
-                    type="text"
-                    placeholder="שם החברה"
-                    className="rounded-lg border border-border/60 bg-card/60 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 transition-colors focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold/30"
-                  />
-                </div>
-              </div>
-              <div className="grid gap-5 sm:grid-cols-2">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-medium text-gold">טלפון</label>
-                  <input
-                    type="tel"
-                    placeholder="מספר טלפון"
-                    className="rounded-lg border border-border/60 bg-card/60 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 transition-colors focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold/30"
-                  />
-                </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-medium text-gold">אימייל</label>
-                  <input
-                    type="email"
-                    placeholder="כתובת אימייל"
-                    className="rounded-lg border border-border/60 bg-card/60 px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/60 transition-colors focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold/30"
-                  />
-                </div>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label className="text-xs font-medium text-gold">שלב הפרויקט</label>
-                <select className="rounded-lg border border-border/60 bg-card/60 px-4 py-3 text-sm text-muted-foreground transition-colors focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold/30">
-                  <option value="">בחרו שלב...</option>
-                  <option value="planning">תכנון</option>
-                  <option value="permit">היתר</option>
-                  <option value="branding">מיתוג</option>
-                  <option value="marketing">שיווק</option>
-                  <option value="sales">מכירות</option>
-                </select>
-              </div>
+          <form className="mt-12 space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <input
+                type="text"
+                placeholder="שם"
+                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
+              />
+              <input
+                type="text"
+                placeholder="חברה"
+                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
+              />
+            </div>
+            <div className="grid gap-6 sm:grid-cols-2">
+              <input
+                type="tel"
+                placeholder="טלפון"
+                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
+              />
+              <input
+                type="email"
+                placeholder="אימייל"
+                className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground placeholder:text-foreground/40 transition-colors focus:border-gold focus:outline-none"
+              />
+            </div>
+            <select className="w-full border-0 border-b border-gold/30 bg-transparent px-1 py-3 text-foreground/40 transition-colors focus:border-gold focus:outline-none">
+              <option value="">שלב הפרויקט</option>
+              <option value="planning">תכנון</option>
+              <option value="permit">היתר</option>
+              <option value="branding">מיתוג</option>
+              <option value="marketing">שיווק</option>
+              <option value="sales">מכירות</option>
+            </select>
+            <div className="pt-4 text-center">
               <button
                 type="submit"
-                className="mt-3 rounded-full bg-gold px-8 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-gold/20 transition-all hover:scale-105 hover:shadow-xl hover:shadow-gold/30"
+                className="rounded-full bg-gold px-10 py-4 text-base font-semibold text-primary-foreground shadow-lg shadow-gold/20 transition-all hover:scale-105 hover:shadow-xl hover:shadow-gold/30"
               >
                 בואו נדבר על הפרויקט שלכם
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </Reveal>
       </div>
     </section>

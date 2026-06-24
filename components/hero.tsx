@@ -14,7 +14,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-5 text-center">
         <div className="mt-12 mb-6" style={{ animation: "fade-up 0.8s ease both" }}>
-          <img src="/media/logo.png" alt="Oren Cohen Group" className="mx-auto h-20 w-20 rounded-full drop-shadow-[0_2px_16px_rgba(212,175,55,0.3)]" />
+          <img src="/media/a-z.png" alt="Oren Cohen Group" className="mx-auto h-32 sm:h-36 md:h-40 w-auto drop-shadow-[0_2px_16px_rgba(212,175,55,0.3)]" />
         </div>
 
         <h1
