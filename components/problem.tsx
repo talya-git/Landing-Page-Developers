@@ -1,7 +1,6 @@
 "use client"
 
 import { Reveal } from "@/components/reveal"
-import { AlertTriangle } from "lucide-react"
 
 const pains = [
   "התמהיל",
@@ -19,9 +18,6 @@ export function Problem() {
 
       <div className="mx-auto max-w-4xl px-5 md:px-8">
         <Reveal className="text-center">
-          <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gold/10 shadow-lg shadow-gold/5">
-            <AlertTriangle className="h-8 w-8 text-gold" />
-          </div>
           <h2 className="font-heading text-3xl font-bold leading-tight tracking-tight text-balance text-gold-gradient sm:text-4xl md:text-[3.5rem]">
             רוב הפרויקטים מגיעים לשיווק מאוחר מדי
           </h2>

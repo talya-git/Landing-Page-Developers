@@ -74,11 +74,10 @@ export function Services() {
               <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-card/80 p-8 transition-all duration-500 hover:border-gold/50 hover:shadow-[0_8px_40px_-12px_rgba(212,175,55,0.2)] hover:-translate-y-1">
                 <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 bg-[radial-gradient(circle,oklch(0.69_0.076_78/0.15)_0%,transparent_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 text-gold shadow-inner transition-transform duration-500 group-hover:scale-110">
                     <s.icon className="h-7 w-7" />
                   </div>
-                  <span className="font-heading text-3xl font-bold text-gold/20 group-hover:text-gold/40 transition-colors">{s.num}</span>
                 </div>
 
                 <h3 className="mt-6 font-heading text-xl font-bold text-foreground">{s.title}</h3>
