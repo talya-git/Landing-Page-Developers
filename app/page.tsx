@@ -1,6 +1,7 @@
 import { SiteHeader } from "@/components/site-header"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { Hero } from "@/components/hero"
+import { StatsBar } from "@/components/stats-bar"
 import { Problem } from "@/components/problem"
 import { About } from "@/components/about"
 import { Services } from "@/components/services"
@@ -19,6 +20,8 @@ export default function Page() {
       <SiteHeader />
       {/* מסך 1 - Hero */}
       <Hero />
+      {/* Stats */}
+      <StatsBar />
       {/* מסך 2 - הכאב של היזם */}
       <Problem />
       {/* מסך 3 - מי אנחנו */}
