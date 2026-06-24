@@ -28,7 +28,7 @@ export function Hero() {
         poster="/media/render3.jpeg"
         onEnded={handleVideo1End}
       >
-        <source src="/media/video1.mp4" type="video/mp4" />
+        <source src="/media/video2.mp4" type="video/mp4" />
       </video>
       <video
         ref={video2Ref}
@@ -37,7 +37,7 @@ export function Hero() {
         playsInline
         onEnded={handleVideo2End}
       >
-        <source src="/media/video2.mp4" type="video/mp4" />
+        <source src="/media/video1.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-background/60" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/40" />
