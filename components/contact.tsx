@@ -24,7 +24,7 @@ export function Contact() {
         src="/media/render4.jpeg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-contain sm:object-cover"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-background/50" />
       <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-transparent to-background/70" />

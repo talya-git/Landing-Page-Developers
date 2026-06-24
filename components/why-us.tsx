@@ -26,7 +26,7 @@ export function WhyUs() {
         src="/media/render3.jpeg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-contain sm:object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-background/80" />
       <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background/90" />
