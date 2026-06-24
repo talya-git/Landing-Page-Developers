@@ -1,3 +1,5 @@
+"use client"
+
 import { Reveal } from "@/components/reveal"
 
 export function Contact() {
@@ -9,7 +11,7 @@ export function Contact() {
         aria-hidden="true"
         className="absolute inset-0 h-full w-full object-cover"
       />
-      <div className="absolute inset-0 bg-background/90" />
+      <div className="absolute inset-0 bg-background/75" />
 
       <div className="relative mx-auto max-w-2xl px-5 md:px-8">
         <Reveal className="text-center">
