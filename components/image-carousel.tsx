@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react"
 
 const media = [
-  { type: "image" as const, src: "/media/render1.jpeg" },
   { type: "image" as const, src: "/media/render2.jpeg" },
   { type: "image" as const, src: "/media/render3.jpeg" },
   { type: "image" as const, src: "/media/render4.jpeg" },
@@ -11,7 +10,6 @@ const media = [
   { type: "image" as const, src: "/media/render6.jpeg" },
   { type: "image" as const, src: "/media/render7.jpeg" },
   { type: "image" as const, src: "/media/render8.jpeg" },
-  { type: "video" as const, src: "/media/project-video.mp4" },
 ]
 
 export function ImageCarousel({ title }: { title: string }) {
