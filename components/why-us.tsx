@@ -21,12 +21,12 @@ const reasons = [
 
 export function WhyUs() {
   return (
-    <section className="relative overflow-hidden py-24 md:py-36">
+    <section className="relative min-h-[70vh] overflow-hidden py-24 md:py-36">
       <img
         src="/media/render3.jpeg"
         alt=""
         aria-hidden="true"
-        className="absolute inset-0 h-full w-full object-cover object-top"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-background/85" />
 

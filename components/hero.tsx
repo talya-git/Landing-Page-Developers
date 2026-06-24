@@ -54,11 +54,11 @@ export function Hero() {
         >
           יש פרויקטים שנבנים.
           <br />
-          <span className="whitespace-nowrap">ויש פרויקטים שנבנים כדי להצליח.</span>
+          <span>ויש פרויקטים שנבנים כדי להצליח.</span>
         </h1>
 
         <p
-          className="mt-7 max-w-2xl text-base leading-relaxed text-foreground/90 sm:text-lg whitespace-nowrap"
+          className="mt-7 max-w-2xl text-base leading-relaxed text-foreground/90 sm:text-lg"
           style={{ animation: "fade-up 0.9s ease 0.25s both" }}
         >
           באורן כהן גרופ אנחנו מלווים יזמים משלב החשיבה והתכנון,

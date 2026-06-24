@@ -19,7 +19,7 @@ function FloatingInput({ label, type = "text" }: { label: string; type?: string 
 
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden py-20 md:py-28">
+    <section id="contact" className="relative min-h-[70vh] overflow-hidden py-20 md:py-28">
       <img
         src="/media/render4.jpeg"
         alt=""
