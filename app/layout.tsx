@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from 'next'
-import { Assistant, Heebo } from 'next/font/google'
+import { Varela_Round, Rubik } from 'next/font/google'
 import './globals.css'
 
-const assistant = Assistant({
+const varelaRound = Varela_Round({
   variable: '--font-assistant',
   subsets: ['hebrew', 'latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400'],
 })
 
-const heebo = Heebo({
+const rubik = Rubik({
   variable: '--font-heebo',
   subsets: ['hebrew', 'latin'],
   weight: ['400', '500', '600', '700', '800'],
@@ -32,7 +32,7 @@ export default function RootLayout({
     <html
       lang="he"
       dir="rtl"
-      className={`${assistant.variable} ${heebo.variable} bg-background`}
+      className={`${varelaRound.variable} ${rubik.variable} bg-background`}
     >
       <body className="font-sans antialiased">
         {children}
