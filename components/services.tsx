@@ -56,19 +56,18 @@ export function Services() {
           </p>
         </Reveal>
 
-        {/* Timeline */}
         <Reveal delay={80}>
-          <div className="mt-12 flex flex-wrap justify-center gap-2 text-xs sm:text-sm">
+          <div className="mt-12 flex flex-wrap justify-center gap-3 text-sm sm:text-base">
             {["קרקע", "תכנון", "היתר", "מיתוג", "שיווק", "מכירות", "אכלוס"].map((step, i) => (
-              <div key={step} className="flex items-center gap-2">
-                <span className="rounded-full border border-gold/30 bg-gold/10 px-4 py-2 font-medium text-gold transition-all hover:bg-gold/20 hover:scale-105">{step}</span>
-                {i < 6 && <span className="text-gold/40">←</span>}
+              <div key={step} className="flex items-center gap-3">
+                <span className="rounded-full border border-gold/30 bg-gold/10 px-6 py-3 font-semibold text-gold transition-all hover:bg-gold/20 hover:scale-105">{step}</span>
+                {i < 6 && <span className="text-lg text-gold/40">←</span>}
               </div>
             ))}
           </div>
         </Reveal>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {stages.map((s, i) => (
             <Reveal key={s.title} delay={i * 100}>
               <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-card/80 p-8 transition-all duration-500 hover:border-gold/50 hover:shadow-[0_8px_40px_-12px_rgba(212,175,55,0.2)] hover:-translate-y-1">

@@ -51,7 +51,6 @@ export function WhyUs() {
           {reasons.map((r, i) => (
             <Reveal key={r.title} delay={i * 100}>
               <div className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-8 backdrop-blur-md transition-all duration-500 hover:border-gold/40 hover:bg-white/[0.07] hover:shadow-[0_8px_40px_-12px_rgba(212,175,55,0.15)]">
-                <span className="absolute -right-2 -top-4 font-heading text-[5rem] font-bold leading-none text-gold/[0.07] group-hover:text-gold/[0.12] transition-colors">{r.num}</span>
                 <div className="relative">
                   <h3 className="font-heading text-xl font-bold text-foreground">{r.title}</h3>
                   <p className="mt-3 leading-relaxed text-muted-foreground group-hover:text-foreground/80 transition-colors">{r.text}</p>

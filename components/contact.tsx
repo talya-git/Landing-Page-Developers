@@ -56,7 +56,7 @@ export function Contact() {
                 </div>
 
                 <div className="group relative">
-                  <select className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-muted-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30">
+                  <select className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30">
                     <option value="">שלב הפרויקט</option>
                     <option value="planning">תכנון</option>
                     <option value="permit">היתר</option>
