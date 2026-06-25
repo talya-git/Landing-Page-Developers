@@ -73,7 +73,7 @@ export function Hero() {
         </p>
 
         <div
-          className="mt-10"
+          className="mt-14 hidden sm:block"
           style={{ animation: "fade-up 0.9s ease 0.4s both" }}
         >
           <a
