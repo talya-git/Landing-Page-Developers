@@ -43,8 +43,8 @@ export function Contact() {
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="mt-12 overflow-hidden rounded-3xl border border-gold/30 bg-background/80 p-1 shadow-[0_8px_60px_-12px_rgba(212,175,55,0.25)] backdrop-blur-xl">
-            <div className="rounded-[20px] border border-gold/20 bg-card/70 p-8 md:p-10">
+          <div className="mt-12 overflow-hidden rounded-3xl border border-gold/30 bg-white/[0.08] p-1 shadow-[0_8px_60px_-12px_rgba(212,175,55,0.25)] backdrop-blur-2xl">
+            <div className="rounded-[20px] border border-gold/20 bg-white/[0.12] p-8 md:p-10 backdrop-blur-2xl">
               <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <FloatingInput label="שם" />
