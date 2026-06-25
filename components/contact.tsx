@@ -82,10 +82,17 @@ export function Contact() {
         <Reveal delay={120}>
           <div className="mt-12 overflow-hidden rounded-3xl border border-gold/30 bg-white/[0.08] p-1 shadow-[0_8px_60px_-12px_rgba(212,175,55,0.25)] backdrop-blur-2xl">
             <div className="rounded-[20px] border border-gold/20 bg-white/[0.12] p-8 md:p-10 backdrop-blur-2xl">
-              <form className="flex flex-col gap-5" action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="5514f7b1-41aa-44b2-8012-6da1bf9fe913" />
-                <input type="hidden" name="subject" value="פנייה חדשה מדף יזמים" />
-                <input type="hidden" name="from_name" value="דף נחיתה יזמים" />
+              <form className="flex flex-col gap-5" onSubmit={async (e) => {
+                e.preventDefault()
+                const form = e.currentTarget
+                const data = new FormData(form)
+                data.append("access_key", "5514f7b1-41aa-44b2-8012-6da1bf9fe913")
+                data.append("subject", "פנייה חדשה מדף יזמים")
+                data.append("from_name", "דף נחיתה יזמים")
+                await fetch("https://api.web3forms.com/submit", { method: "POST", body: data })
+                form.reset()
+                alert("תודה! פנייתכם נשלחה בהצלחה. נחזור אליכם בהקדם.")
+              }}>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <FloatingInput label="שם" name="name" />
                   <FloatingInput label="חברה" name="company" />
