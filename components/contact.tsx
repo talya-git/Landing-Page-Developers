@@ -38,11 +38,12 @@ const CONTACTS = [
   },
 ]
 
-function FloatingInput({ label, type = "text" }: { label: string; type?: string }) {
+function FloatingInput({ label, type = "text", name }: { label: string; type?: string; name: string }) {
   return (
     <div className="group relative">
       <input
         type={type}
+        name={name}
         placeholder=" "
         className="peer w-full rounded-xl border border-white/10 bg-white/5 px-4 pb-3 pt-6 text-sm text-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30"
       />
@@ -81,18 +82,21 @@ export function Contact() {
         <Reveal delay={120}>
           <div className="mt-12 overflow-hidden rounded-3xl border border-gold/30 bg-white/[0.08] p-1 shadow-[0_8px_60px_-12px_rgba(212,175,55,0.25)] backdrop-blur-2xl">
             <div className="rounded-[20px] border border-gold/20 bg-white/[0.12] p-8 md:p-10 backdrop-blur-2xl">
-              <form className="flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+              <form className="flex flex-col gap-5" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="5514f7b1-41aa-44b2-8012-6da1bf9fe913" />
+                <input type="hidden" name="subject" value="פנייה חדשה מדף יזמים" />
+                <input type="hidden" name="from_name" value="דף נחיתה יזמים" />
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <FloatingInput label="שם" />
-                  <FloatingInput label="חברה" />
+                  <FloatingInput label="שם" name="name" />
+                  <FloatingInput label="חברה" name="company" />
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
-                  <FloatingInput label="טלפון" type="tel" />
-                  <FloatingInput label="אימייל" type="email" />
+                  <FloatingInput label="טלפון" type="tel" name="phone" />
+                  <FloatingInput label="אימייל" type="email" name="email" />
                 </div>
 
                 <div className="group relative">
-                  <select className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30">
+                  <select name="stage" className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-4 text-sm text-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30">
                     <option value="">שלב הפרויקט</option>
                     <option value="planning">תכנון</option>
                     <option value="permit">היתר</option>
@@ -131,7 +135,7 @@ export function Contact() {
                   <c.icon className="h-5 w-5" />
                 </span>
                 <span className="font-heading text-sm font-semibold text-foreground">{c.label}</span>
-                <span className="text-[11px] text-muted-foreground">{c.sub}</span>
+                <span className="text-[10px] text-muted-foreground break-all">{c.sub}</span>
               </a>
             ))}
           </div>
