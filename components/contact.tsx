@@ -10,7 +10,7 @@ function FloatingInput({ label, type = "text" }: { label: string; type?: string 
         placeholder=" "
         className="peer w-full rounded-xl border border-white/10 bg-white/5 px-4 pb-3 pt-6 text-sm text-foreground backdrop-blur-sm transition-all focus:border-gold/60 focus:bg-white/10 focus:outline-none focus:ring-1 focus:ring-gold/30"
       />
-      <label className="pointer-events-none absolute right-4 top-2 text-[11px] font-medium tracking-wide text-gold/70 transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:text-muted-foreground peer-focus:top-2 peer-focus:text-[11px] peer-focus:text-gold/70">
+      <label className="pointer-events-none absolute right-4 top-2 text-[11px] font-medium tracking-wide text-gold transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-sm peer-placeholder-shown:text-foreground/70 peer-focus:top-2 peer-focus:text-[11px] peer-focus:text-gold">
         {label}
       </label>
     </div>
