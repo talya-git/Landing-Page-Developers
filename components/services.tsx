@@ -94,10 +94,10 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-6 flex justify-center gap-6">
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-2 lg:max-w-[66%] lg:mx-auto">
           {stages.slice(3).map((s, i) => (
             <Reveal key={s.title} delay={(i + 3) * 100}>
-              <div className="group relative flex h-full w-full max-w-sm flex-col overflow-hidden rounded-2xl border border-border/50 bg-card/80 p-8 transition-all duration-500 hover:border-gold/50 hover:shadow-[0_8px_40px_-12px_rgba(212,175,55,0.2)] hover:-translate-y-1">
+              <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-card/80 p-8 transition-all duration-500 hover:border-gold/50 hover:shadow-[0_8px_40px_-12px_rgba(212,175,55,0.2)] hover:-translate-y-1">
                 <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 bg-[radial-gradient(circle,oklch(0.69_0.076_78/0.15)_0%,transparent_70%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 
                 <div className="flex items-center">
