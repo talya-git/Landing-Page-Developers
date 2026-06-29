@@ -61,15 +61,15 @@ export function Hero() {
           className="mt-7 max-w-2xl text-base leading-relaxed text-foreground/90 sm:text-lg"
           style={{ animation: "fade-up 0.9s ease 0.25s both" }}
         >
-          באורן כהן גרופ אנחנו מלווים יזמים משלב החשיבה והתכנון,
+          באורן כהן גרופ אנו מלווים יזמים כבר משלב החשיבה והתכנון,
           <br />
-          דרך המיתוג, ההדמיות, השיווק והמכירות ועד האכלוס.
+          דרך המיתוג, ההדמיות, השיווק והמכירות — ועד לאכלוס הפרויקט.
         </p>
         <p
           className="mt-4 text-pretty text-base leading-relaxed text-foreground/80 sm:text-lg"
           style={{ animation: "fade-up 0.9s ease 0.3s both" }}
         >
-          עם ניסיון של למעלה מ-70 פרויקטים, אנחנו יודעים להפוך חזון יזמי לפרויקט שהשוק יודע לזהות, לרצות ולבחור.
+          עם ניסיון בליווי של למעלה מ־70 פרויקטים למגורים, אנו יודעים כיצד להפוך חזון יזמי לפרויקט שהשוק מזהה, מבקש ובוחר.
         </p>
 
         <div

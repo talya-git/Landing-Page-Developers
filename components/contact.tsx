@@ -25,7 +25,7 @@ const CONTACTS = [
     icon: Phone,
   },
   {
-    label: "אימייל",
+    label: "דוא\"ל",
     sub: "atoz@orencohengroup.com",
     href: "mailto:atoz@orencohengroup.com",
     icon: Mail,
@@ -75,7 +75,7 @@ export function Contact() {
             הצלחה מתחילה בתכנון נכון של הדרך אליו.
           </h2>
           <p className="mt-6 text-pretty leading-relaxed text-foreground/80">
-            אם אתם מחפשים שותף שמבין יזמות, מבין שיווק ומבין אנשים - נשמח להכיר את הפרויקט הבא שלכם.
+            אם אתם מחפשים שותף שמבין יזמות, מבין שיווק ומבין אנשים — נשמח להכיר את הפרויקט הבא שלכם.
           </p>
         </Reveal>
 
@@ -99,7 +99,7 @@ export function Contact() {
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <FloatingInput label="טלפון" type="tel" name="phone" />
-                  <FloatingInput label="אימייל" type="email" name="email" />
+                  <FloatingInput label="דוא\"ל" type="email" name="email" />
                 </div>
 
                 <div className="group relative">
