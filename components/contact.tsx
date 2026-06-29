@@ -13,7 +13,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 const CONTACTS = [
   {
-    label: "ואטסאפ",
+    label: "וואטסאפ",
     sub: "שיחה ישירה עם הצוות",
     href: "https://wa.me/972545596052",
     icon: WhatsAppIcon,
