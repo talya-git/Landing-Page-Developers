@@ -25,7 +25,7 @@ const CONTACTS = [
     icon: Phone,
   },
   {
-    label: "דוא\"ל",
+    label: "דוא״ל",
     sub: "atoz@orencohengroup.com",
     href: "mailto:atoz@orencohengroup.com",
     icon: Mail,
@@ -99,7 +99,7 @@ export function Contact() {
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <FloatingInput label="טלפון" type="tel" name="phone" />
-                  <FloatingInput label="דוא\"ל" type="email" name="email" />
+                  <FloatingInput label="דוא״ל" type="email" name="email" />
                 </div>
 
                 <div className="group relative">
