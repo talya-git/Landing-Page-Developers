@@ -3,7 +3,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-card/40 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-5 text-center md:px-8">
         <p className="max-w-2xl font-heading text-lg leading-relaxed text-gold-soft sm:text-xl">
-          "אחרי יותר מ-70 פרויקטים שליווינו, למדנו דבר אחד: השאלה היא לא רק איך משווקים פרויקט. השאלה היא איך בונים אותו כך שהשוק יחכה לו"
+          "אחרי ליווי של מעל ל-70 פרויקטים למדנו שבשיווק הסוד הוא לא איך משווקים פרויקט אלא איך בונים אותו כך שהשוק יחכה לו"
         </p>
         <div>
           <img src="/media/logo.png" alt="Oren Cohen Group" className="mx-auto h-14 w-14 rounded-full" />
